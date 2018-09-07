@@ -71,6 +71,34 @@ export class CourseUsers {
     return seq;
   }
 
+  postInsCurso(params?: any) {
+    let seq = this.api.post('course_users/inscribircurso', params).share();
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._guardaParam(res);
+      } else {
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+    return seq;
+  }
+
+  postFinCurso(params?: any) {
+    let seq = this.api.post('course_users/finalizarcurso', params).share();
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._guardaParam(res);
+      } else {
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+    return seq;
+  }
+
   /**
    * Process a login/signup response to store user data
    */

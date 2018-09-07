@@ -1,15 +1,15 @@
 webpackJsonp([19],{
 
-/***/ 333:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChallengeUsersActPageModule", function() { return ChallengeUsersActPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComplaintFilesDelPageModule", function() { return ComplaintFilesDelPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__challenge_usersact__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__complaintfilesdel__ = __webpack_require__(377);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,38 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ChallengeUsersActPageModule = /** @class */ (function () {
-    function ChallengeUsersActPageModule() {
+var ComplaintFilesDelPageModule = /** @class */ (function () {
+    function ComplaintFilesDelPageModule() {
     }
-    ChallengeUsersActPageModule = __decorate([
+    ComplaintFilesDelPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__challenge_usersact__["a" /* ChallengeUsersActPage */],
+                __WEBPACK_IMPORTED_MODULE_3__complaintfilesdel__["a" /* ComplaintFilesDelPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__challenge_usersact__["a" /* ChallengeUsersActPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__complaintfilesdel__["a" /* ComplaintFilesDelPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__challenge_usersact__["a" /* ChallengeUsersActPage */]
+                __WEBPACK_IMPORTED_MODULE_3__complaintfilesdel__["a" /* ComplaintFilesDelPage */]
             ]
         })
-    ], ChallengeUsersActPageModule);
-    return ChallengeUsersActPageModule;
+    ], ComplaintFilesDelPageModule);
+    return ComplaintFilesDelPageModule;
 }());
 
-//# sourceMappingURL=challenge_usersact.module.js.map
+//# sourceMappingURL=complaintfilesdel.module.js.map
 
 /***/ }),
 
-/***/ 355:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChallengeUsersActPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintFilesDelPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -64,38 +64,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ChallengeUsersActPage = /** @class */ (function () {
-    function ChallengeUsersActPage(navCtrl, navParams, ChallengeUsers) {
+var ComplaintFilesDelPage = /** @class */ (function () {
+    function ComplaintFilesDelPage(navCtrl, navParams, ComplaintFiles) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.ChallengeUsers = ChallengeUsers;
-        this.retos = [];
-        this.usuarioActual = navParams.get("user");
+        this.ComplaintFiles = ComplaintFiles;
+        this.archivos = [];
+        this.archivo = {};
+        //this.usuarioActual = navParams.get("user")
+        this.idArchivoActual = navParams.get("id");
+        this.queja = navParams.get("queja");
     }
-    ChallengeUsersActPage_1 = ChallengeUsersActPage;
-    ChallengeUsersActPage.prototype.ionViewDidLoad = function () {
+    ComplaintFilesDelPage_1 = ComplaintFilesDelPage;
+    ComplaintFilesDelPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.ChallengeUsers.getAct({ userid: this.usuarioActual.id })
+        //    this.ComplaintUsers.deleteQueja({id: this.idQuejaActual, withCredentials: true})
+        this.ComplaintFiles.deleteArchivo({ id: this.idArchivoActual })
             .subscribe(function (data) {
-            _this.retos = data['retos'];
+            _this.archivos = data['archivos'];
             //console.log(this.usuarioActual.id);
+            //        this.navCtrl.push("ComplaintFilesPage", {queja: this.queja});
         }, function (err) {
             //this.navCtrl.push(MainPage);
-            _this.navCtrl.push(ChallengeUsersActPage_1);
+            _this.navCtrl.push(ComplaintFilesDelPage_1);
             console.error(err);
         });
     };
-    ChallengeUsersActPage = ChallengeUsersActPage_1 = __decorate([
+    ComplaintFilesDelPage = ComplaintFilesDelPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-challenge_usersact',template:/*ion-inline-start:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\challenge_usersact\challenge_usersact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Retos Actuales    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>Actuales_____Prueba de lectura de campo: {{this.usuarioActual.id}} / {{this.usuarioActual.email}} / {{this.usuarioActual.token}}</p>\n\n  <ion-list>\n    <ion-item *ngFor="let reto of retos">\n      <p>IdRegistro: {{reto.id}}, IDReto: {{reto.challenge.id}}, NombreReto: {{reto.challenge.descripcion}}, FechaInicio: {{reto.fechainicio}}, FechaFin: {{reto.fechafin}}</p>\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\challenge_usersact\challenge_usersact.html"*/
+            selector: 'page-complaintfilesdel',template:/*ion-inline-start:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\complaintfilesdel\complaintfilesdel.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Información de borrado de Archivo    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <!--p>Detalles_____Prueba de lectura de campo: {{this.usuarioActual.id}} / {{this.usuarioActual.email}} / {{this.usuarioActual.token}}</p-->\n  <p>Se ha borrado el archivo</p>\n</ion-content>\n'/*ion-inline-end:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\complaintfilesdel\complaintfilesdel.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* ChallengeUsers */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* ChallengeUsers */]) === "function" && _c || Object])
-    ], ChallengeUsersActPage);
-    return ChallengeUsersActPage;
-    var ChallengeUsersActPage_1, _a, _b, _c;
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ComplaintFiles */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ComplaintFiles */]) === "function" && _c || Object])
+    ], ComplaintFilesDelPage);
+    return ComplaintFilesDelPage;
+    var ComplaintFilesDelPage_1, _a, _b, _c;
 }());
 
-//# sourceMappingURL=challenge_usersact.js.map
+//# sourceMappingURL=complaintfilesdel.js.map
 
 /***/ })
 

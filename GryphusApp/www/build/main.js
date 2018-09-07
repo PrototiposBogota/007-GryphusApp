@@ -1,4 +1,4 @@
-webpackJsonp([22],{
+webpackJsonp([32],{
 
 /***/ 132:
 /***/ (function(module, exports) {
@@ -22,91 +22,131 @@ webpackEmptyAsyncContext.id = 132;
 
 var map = {
 	"../pages/cards/cards.module": [
-		331,
-		21
+		333,
+		31
 	],
 	"../pages/challenge_users/challenge_users.module": [
-		332,
-		20
+		334,
+		30
 	],
 	"../pages/challenge_usersact/challenge_usersact.module": [
-		333,
-		19
+		335,
+		29
 	],
 	"../pages/challenge_usersdisp/challenge_usersdisp.module": [
-		334,
-		18
+		336,
+		28
 	],
 	"../pages/challenge_usershist/challenge_usershist.module": [
-		335,
+		337,
+		27
+	],
+	"../pages/complaint_users/complaint_users.module": [
+		338,
+		26
+	],
+	"../pages/complaint_usersact/complaint_usersact.module": [
+		339,
+		25
+	],
+	"../pages/complaint_usersdel/complaint_usersdel.module": [
+		340,
+		24
+	],
+	"../pages/complaint_usersdisp/complaint_usersdisp.module": [
+		341,
+		23
+	],
+	"../pages/complaint_usershist/complaint_usershist.module": [
+		342,
+		22
+	],
+	"../pages/complaint_usersnew/complaint_usersnew.module": [
+		343,
+		21
+	],
+	"../pages/complaintfiles/complaintfiles.module": [
+		344,
+		20
+	],
+	"../pages/complaintfilesdel/complaintfilesdel.module": [
+		345,
+		19
+	],
+	"../pages/complaintfilesedit/complaintfilesedit.module": [
+		346,
+		18
+	],
+	"../pages/complaintfilesnew/complaintfilesnew.module": [
+		347,
 		17
 	],
 	"../pages/content/content.module": [
-		336,
+		348,
 		16
 	],
 	"../pages/course_users/course_users.module": [
-		337,
+		349,
 		15
 	],
 	"../pages/course_usersact/course_usersact.module": [
-		338,
+		350,
 		14
 	],
 	"../pages/course_usersdisp/course_usersdisp.module": [
-		339,
+		351,
 		13
 	],
 	"../pages/course_usershist/course_usershist.module": [
-		340,
+		352,
 		12
 	],
 	"../pages/item-create/item-create.module": [
-		341,
+		353,
 		11
 	],
 	"../pages/item-detail/item-detail.module": [
-		342,
+		354,
 		10
 	],
 	"../pages/list-master/list-master.module": [
-		343,
+		355,
 		9
 	],
 	"../pages/login/login.module": [
-		344,
+		356,
 		8
 	],
 	"../pages/menu/menu.module": [
-		345,
+		357,
 		7
 	],
 	"../pages/principal/principal.module": [
-		346,
+		358,
 		6
 	],
 	"../pages/search/search.module": [
-		347,
+		359,
 		5
 	],
 	"../pages/settings/settings.module": [
-		348,
+		360,
 		4
 	],
 	"../pages/signup/signup.module": [
-		349,
+		361,
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		350,
+		362,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		351,
+		363,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		352,
+		364,
 		0
 	]
 };
@@ -246,6 +286,15 @@ var Items = /** @class */ (function () {
 /* unused harmony export ChallengeUsersActPage */
 /* unused harmony export ChallengeUsersDispPage */
 /* unused harmony export ChallengeUsersHistPage */
+/* unused harmony export ComplaintUsersPage */
+/* unused harmony export ComplaintUsersActPage */
+/* unused harmony export ComplaintUsersDispPage */
+/* unused harmony export ComplaintUsersHistPage */
+/* unused harmony export ComplaintUsersNewPage */
+/* unused harmony export ComplaintFilesPage */
+/* unused harmony export ComplaintFilesEditPage */
+/* unused harmony export ComplaintFilesNewPage */
+/* unused harmony export ComplaintFilesDelPage */
 // The page the user lands on after opening the app and without a session
 //export const FirstRunPage = 'TutorialPage';
 var FirstRunPage = 'WelcomePage';
@@ -267,6 +316,15 @@ var ChallengeUsersPage = 'ChallengeUsersPage';
 var ChallengeUsersActPage = 'ChallengeUsersActPage';
 var ChallengeUsersDispPage = 'ChallengeUsersDispPage';
 var ChallengeUsersHistPage = 'ChallengeUsersHistPage';
+var ComplaintUsersPage = 'ComplaintUsersPage';
+var ComplaintUsersActPage = 'ComplaintUsersActPage';
+var ComplaintUsersDispPage = 'ComplaintUsersDispPage';
+var ComplaintUsersHistPage = 'ComplaintUsersHistPage';
+var ComplaintUsersNewPage = 'ComplaintUsersNewPage';
+var ComplaintFilesPage = 'ComplaintFilesPage';
+var ComplaintFilesEditPage = 'ComplaintFilesEditPage';
+var ComplaintFilesNewPage = 'ComplaintFilesNewPage';
+var ComplaintFilesDelPage = 'ComplaintFilesDelPage';
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -294,7 +352,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(136);
@@ -303,14 +361,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__mocks_providers_items__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(332);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -338,7 +398,7 @@ function provideSettings(storage) {
      * You can add new settings options at any time. Once the settings are saved,
      * these values will not overwrite the saved values (this can be done manually if desired).
      */
-    return new __WEBPACK_IMPORTED_MODULE_11__providers__["e" /* Settings */](storage, {
+    return new __WEBPACK_IMPORTED_MODULE_11__providers__["g" /* Settings */](storage, {
         option1: true,
         option2: 'Ionitron J. Framework',
         option3: '3',
@@ -370,6 +430,16 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/challenge_usersact/challenge_usersact.module#ChallengeUsersActPageModule', name: 'ChallengeUsersActPage', segment: 'challenge_usersact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/challenge_usersdisp/challenge_usersdisp.module#ChallengeUsersDispPageModule', name: 'ChallengeUsersDispPage', segment: 'challenge_usersdisp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/challenge_usershist/challenge_usershist.module#ChallengeUsersHistPageModule', name: 'ChallengeUsersHistPage', segment: 'challenge_usershist', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_users/complaint_users.module#ComplaintUsersPageModule', name: 'ComplaintUsersPage', segment: 'complaint_users', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_usersact/complaint_usersact.module#ComplaintUsersActPageModule', name: 'ComplaintUsersActPage', segment: 'complaint_usersact', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_usersdel/complaint_usersdel.module#ComplaintUsersDelPageModule', name: 'ComplaintUsersDelPage', segment: 'complaint_usersdel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_usersdisp/complaint_usersdisp.module#ComplaintUsersDispPageModule', name: 'ComplaintUsersDispPage', segment: 'complaint_usersdisp', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_usershist/complaint_usershist.module#ComplaintUsersHistPageModule', name: 'ComplaintUsersHistPage', segment: 'complaint_usershist', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaint_usersnew/complaint_usersnew.module#ComplaintUsersNewPageModule', name: 'ComplaintUsersNewPage', segment: 'complaint_usersnew', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaintfiles/complaintfiles.module#ComplaintFilesPageModule', name: 'ComplaintFilesPage', segment: 'complaintfiles', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaintfilesdel/complaintfilesdel.module#ComplaintFilesDelPageModule', name: 'ComplaintFilesDelPage', segment: 'complaintfilesdel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaintfilesedit/complaintfilesedit.module#ComplaintFilesEditPageModule', name: 'ComplaintFilesEditPage', segment: 'complaintfilesedit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/complaintfilesnew/complaintfilesnew.module#ComplaintFilesNewPageModule', name: 'ComplaintFilesNewPage', segment: 'complaintfilesnew', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/course_users/course_users.module#CourseUsersPageModule', name: 'CourseUsersPage', segment: 'course_users', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/course_usersact/course_usersact.module#CourseUsersActPageModule', name: 'CourseUsersActPage', segment: 'course_usersact', priority: 'low', defaultHistory: [] },
@@ -398,15 +468,17 @@ var AppModule = /** @class */ (function () {
             providers: [
                 __WEBPACK_IMPORTED_MODULE_11__providers__["a" /* Api */],
                 __WEBPACK_IMPORTED_MODULE_10__mocks_providers_items__["a" /* Items */],
-                __WEBPACK_IMPORTED_MODULE_11__providers__["f" /* User */],
+                __WEBPACK_IMPORTED_MODULE_11__providers__["h" /* User */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */],
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
-                { provide: __WEBPACK_IMPORTED_MODULE_11__providers__["e" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]] },
+                { provide: __WEBPACK_IMPORTED_MODULE_11__providers__["g" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]] },
                 // Keep this to enable Ionic's runtime error handling during development
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_11__providers__["c" /* CourseUsers */],
-                __WEBPACK_IMPORTED_MODULE_11__providers__["b" /* ChallengeUsers */]
+                __WEBPACK_IMPORTED_MODULE_11__providers__["e" /* CourseUsers */],
+                __WEBPACK_IMPORTED_MODULE_11__providers__["b" /* ChallengeUsers */],
+                __WEBPACK_IMPORTED_MODULE_11__providers__["d" /* ComplaintUsers */],
+                __WEBPACK_IMPORTED_MODULE_11__providers__["c" /* ComplaintFiles */]
             ]
         })
     ], AppModule);
@@ -414,6 +486,38 @@ var AppModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 29:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(34);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(184);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(309);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(310);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course_users_course_users__ = __webpack_require__(311);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__course_users_course_users__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__challenge_users_challenge_users__ = __webpack_require__(312);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_5__challenge_users_challenge_users__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__complaint_users_complaint_users__ = __webpack_require__(313);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__complaint_users_complaint_users__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__complaintfiles_complaintfiles__ = __webpack_require__(314);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__complaintfiles_complaintfiles__["a"]; });
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -540,10 +644,10 @@ var Settings = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -643,10 +747,10 @@ var User = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseUsers; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -728,6 +832,36 @@ var CourseUsers = /** @class */ (function () {
         });
         return seq;
     };
+    CourseUsers.prototype.postInsCurso = function (params) {
+        var _this = this;
+        var seq = this.api.post('course_users/inscribircurso', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response, mark the user as logged in
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    CourseUsers.prototype.postFinCurso = function (params) {
+        var _this = this;
+        var seq = this.api.post('course_users/finalizarcurso', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response, mark the user as logged in
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
     /**
      * Process a login/signup response to store user data
      */
@@ -750,10 +884,10 @@ var CourseUsers = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChallengeUsers; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -835,6 +969,36 @@ var ChallengeUsers = /** @class */ (function () {
         });
         return seq;
     };
+    ChallengeUsers.prototype.postInsReto = function (params) {
+        var _this = this;
+        var seq = this.api.post('challenge_users/inscribirreto', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response, mark the user as logged in
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ChallengeUsers.prototype.postFinReto = function (params) {
+        var _this = this;
+        var seq = this.api.post('challenge_users/finalizarreto', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response, mark the user as logged in
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
     /**
      * Process a login/signup response to store user data
      */
@@ -852,7 +1016,405 @@ var ChallengeUsers = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 330:
+/***/ 313:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintUsers; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(34);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Most apps have the concept of a User. This is a simple provider
+ * with stubs for login/signup/etc.
+ *
+ * This User provider makes calls to our API at the `login` and `signup` endpoints.
+ *
+ * By default, it expects `login` and `signup` to return a JSON object of the shape:
+ *
+ * ```json
+ * {
+ *   status: 'success',
+ *   user: {
+ *     // User fields your app needs, like "id", "name", "email", etc.
+ *   }
+ * }Ø
+ * ```
+ *
+ * If the `status` field is not `success`, then an error is detected and returned.
+ */
+var ComplaintUsers = /** @class */ (function () {
+    function ComplaintUsers(api) {
+        this.api = api;
+        this._complaints = [];
+    }
+    ComplaintUsers.prototype.getDisp = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users/show_disp', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.getAct = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users/show_act', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.getHist = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users/show_hist', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.getIndex = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.getShow = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users/' + params["id"], params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.deleteQueja = function (params) {
+        var _this = this;
+        var seq = this.api.delete('complaint_users/' + params["id"], params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.patchQueja = function (params) {
+        var _this = this;
+        var seq = this.api.patch('complaint_users/' + params["id"], params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.getNew = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaint_users/new', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintUsers.prototype.postQueja = function (params) {
+        var _this = this;
+        var seq = this.api.post('complaint_users', params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    /**
+     * Process a login/signup response to store user data
+     */
+    ComplaintUsers.prototype._guardaParam = function (resp) {
+        this._complaints = resp;
+    };
+    ComplaintUsers = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], ComplaintUsers);
+    return ComplaintUsers;
+}());
+
+//# sourceMappingURL=complaint-users.js.map
+
+/***/ }),
+
+/***/ 314:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintFiles; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(34);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Most apps have the concept of a User. This is a simple provider
+ * with stubs for login/signup/etc.
+ *
+ * This User provider makes calls to our API at the `login` and `signup` endpoints.
+ *
+ * By default, it expects `login` and `signup` to return a JSON object of the shape:
+ *
+ * ```json
+ * {
+ *   status: 'success',
+ *   user: {
+ *     // User fields your app needs, like "id", "name", "email", etc.
+ *   }
+ * }Ø
+ * ```
+ *
+ * If the `status` field is not `success`, then an error is detected and returned.
+ */
+var ComplaintFiles = /** @class */ (function () {
+    function ComplaintFiles(api) {
+        this.api = api;
+        this._complaintfiles = [];
+    }
+    ComplaintFiles.prototype.getIndex = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaintfiles', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    /*
+      getAct(params?: any) {
+        let seq = this.api.get('complaint_users/show_act', params).share();
+        seq.subscribe((res: any) => {
+          // If the API returned a successful response
+          if (res.status == 'success') {
+            this._guardaParam(res);
+          } else {
+          }
+        }, err => {
+          console.error('ERROR', err);
+        });
+        return seq;
+      }
+    
+      getHist(params?: any) {
+        let seq = this.api.get('complaint_users/show_hist', params).share();
+        seq.subscribe((res: any) => {
+          // If the API returned a successful response
+          if (res.status == 'success') {
+            this._guardaParam(res);
+          } else {
+          }
+        }, err => {
+          console.error('ERROR', err);
+        });
+        return seq;
+      }
+    
+      getIndex(params?: any) {
+        let seq = this.api.get('complaint_users', params).share();
+        seq.subscribe((res: any) => {
+          // If the API returned a successful response
+          if (res.status == 'success') {
+            this._guardaParam(res);
+          } else {
+          }
+        }, err => {
+          console.error('ERROR', err);
+        });
+        return seq;
+      }
+    */
+    ComplaintFiles.prototype.getShow = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaintfiles/' + params["id"], params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintFiles.prototype.deleteArchivo = function (params) {
+        var _this = this;
+        var seq = this.api.delete('complaintfiles/' + params["id"], params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintFiles.prototype.patchArchivo = function (params) {
+        var _this = this;
+        var seq = this.api.patch('complaintfiles/' + params["id"], params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintFiles.prototype.getNew = function (params) {
+        var _this = this;
+        var seq = this.api.get('complaintfiles/new', params).share();
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    ComplaintFiles.prototype.postArchivo = function (params) {
+        var _this = this;
+        var seq = this.api.post('complaintfiles', params).share();
+        //seq.withCredentials = true
+        seq.subscribe(function (res) {
+            // If the API returned a successful response
+            if (res.status == 'success') {
+                _this._guardaParam(res);
+            }
+            else {
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    /**
+     * Process a login/signup response to store user data
+     */
+    ComplaintFiles.prototype._guardaParam = function (resp) {
+        this._complaintfiles = resp;
+    };
+    ComplaintFiles = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], ComplaintFiles);
+    return ComplaintFiles;
+}());
+
+//# sourceMappingURL=complaintfiles.js.map
+
+/***/ }),
+
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -863,7 +1425,7 @@ var ChallengeUsers = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -908,7 +1470,16 @@ var MyApp = /** @class */ (function () {
             { title: 'ChallengeUsers', component: 'ChallengeUsersPage' },
             { title: 'ChallengeUsersAct', component: 'ChallengeUsersActPage' },
             { title: 'ChallengeUsersDisp', component: 'ChallengeUsersDispPage' },
-            { title: 'ChallengeUsersHist', component: 'ChallengeUsersHistPage' }
+            { title: 'ChallengeUsersHist', component: 'ChallengeUsersHistPage' },
+            { title: 'ComplaintUsers', component: 'ComplaintUsersPage' },
+            { title: 'ComplaintUsersAct', component: 'ComplaintUsersActPage' },
+            { title: 'ComplaintUsersDisp', component: 'ComplaintUsersDispPage' },
+            { title: 'ComplaintUsersHist', component: 'ComplaintUsersHistPage' },
+            { title: 'ComplaintUsersNew', component: 'ComplaintUsersNewPage' },
+            { title: 'ComplaintFiles', component: 'ComplaintFilesPage' },
+            { title: 'ComplaintFilesEdit', component: 'ComplaintFilesEditPage' },
+            { title: 'ComplaintFilesNew', component: 'ComplaintFilesNewPage' },
+            { title: 'ComplaintFilesDel', component: 'ComplaintFilesDelPage' }
         ];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -957,7 +1528,7 @@ var MyApp = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             template: "<ion-menu [content]=\"content\">\n    <ion-header>\n      <ion-toolbar>\n        <ion-title>Pages</ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers__["e" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers__["g" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -966,33 +1537,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 42:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(52);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(184);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(309);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(310);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course_users_course_users__ = __webpack_require__(311);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__course_users_course_users__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__challenge_users_challenge_users__ = __webpack_require__(312);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_5__challenge_users_challenge_users__["a"]; });
-
-
-
-
-
-
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 52:
+/***/ 34:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

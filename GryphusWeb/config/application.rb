@@ -16,10 +16,25 @@ module Prototipo5
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    #config.action_dispatch.default_headers = {
+    #    'Access-Control-Allow-Origin' => 'http://localhost:3000',
+#        'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+    #    'Access-Control-Request-Method' => %w{GET POST PUT PATCH DELETE OPTIONS}.join(",")
+    #  }
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :options]
+        #origins 'localhost:3000', '127.0.0.1:3000'
+        #resource '*', headers: :any, methods: [:get, :post, :options]
+        #resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+        #resource '/api/*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+        resource(
+          '*',
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options]
+          #methods: [:get, :post, :put, :patch, :delete, :options], credentials: true
+        )
       end
     end
   end
@@ -27,4 +42,3 @@ end
 
 require 'carrierwave'
 require 'carrierwave/orm/activerecord'
-

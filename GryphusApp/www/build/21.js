@@ -1,15 +1,15 @@
 webpackJsonp([21],{
 
-/***/ 331:
+/***/ 343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardsPageModule", function() { return CardsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComplaintUsersNewPageModule", function() { return ComplaintUsersNewPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__complaint_usersnew__ = __webpack_require__(375);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,37 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CardsPageModule = /** @class */ (function () {
-    function CardsPageModule() {
+var ComplaintUsersNewPageModule = /** @class */ (function () {
+    function ComplaintUsersNewPageModule() {
     }
-    CardsPageModule = __decorate([
+    ComplaintUsersNewPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__cards__["a" /* CardsPage */],
+                __WEBPACK_IMPORTED_MODULE_3__complaint_usersnew__["a" /* ComplaintUsersNewPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__cards__["a" /* CardsPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__complaint_usersnew__["a" /* ComplaintUsersNewPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__cards__["a" /* CardsPage */]
+                __WEBPACK_IMPORTED_MODULE_3__complaint_usersnew__["a" /* ComplaintUsersNewPage */]
             ]
         })
-    ], CardsPageModule);
-    return CardsPageModule;
+    ], ComplaintUsersNewPageModule);
+    return ComplaintUsersNewPageModule;
 }());
 
-//# sourceMappingURL=cards.module.js.map
+//# sourceMappingURL=complaint_usersnew.module.js.map
 
 /***/ }),
 
-/***/ 353:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintUsersNewPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -62,49 +63,54 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var CardsPage = /** @class */ (function () {
-    function CardsPage(navCtrl) {
+
+var ComplaintUsersNewPage = /** @class */ (function () {
+    function ComplaintUsersNewPage(navCtrl, navParams, ComplaintUsers) {
         this.navCtrl = navCtrl;
-        this.cardItems = [
-            {
-                user: {
-                    avatar: 'assets/img/marty-avatar.png',
-                    name: 'Marty McFly'
-                },
-                date: 'November 5, 1955',
-                image: 'assets/img/advance-card-bttf.png',
-                content: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.',
-            },
-            {
-                user: {
-                    avatar: 'assets/img/sarah-avatar.png.jpeg',
-                    name: 'Sarah Connor'
-                },
-                date: 'May 12, 1984',
-                image: 'assets/img/advance-card-tmntr.jpg',
-                content: 'I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.'
-            },
-            {
-                user: {
-                    avatar: 'assets/img/ian-avatar.png',
-                    name: 'Dr. Ian Malcolm'
-                },
-                date: 'June 28, 1990',
-                image: 'assets/img/advance-card-jp.jpg',
-                content: 'Your scientists were so preoccupied with whether or not they could, that they didn\'t stop to think if they should.'
-            }
-        ];
+        this.navParams = navParams;
+        this.ComplaintUsers = ComplaintUsers;
+        //quejas: any[] = [];
+        this.queja = {};
+        this.usuarioActual = navParams.get("user");
     }
-    CardsPage = __decorate([
+    ComplaintUsersNewPage_1 = ComplaintUsersNewPage;
+    ComplaintUsersNewPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.ComplaintUsers.getNew()
+            .subscribe(function (data) {
+            //this.quejas = data['quejas'];
+            _this.queja = data['quejas'];
+            //console.log(this.usuarioActual.id);
+        }, function (err) {
+            //this.navCtrl.push(MainPage);
+            _this.navCtrl.push(ComplaintUsersNewPage_1);
+            console.error(err);
+        });
+    };
+    //
+    ComplaintUsersNewPage.prototype.dopostQueja = function () {
+        var _this = this;
+        this.ComplaintUsers.postQueja({ user_id: this.usuarioActual.id, complaint_id: this.queja.complaint_id, direccion: this.queja.direccion, comentarios: this.queja.comentarios }).subscribe(function (resp) {
+            //this.navCtrl.push(MainPage);
+            //this.navCtrl.push(ComplaintUsersDispPage, {user: resp});
+            _this.navCtrl.push("ComplaintUsersPage", { user: _this.usuarioActual });
+        }, function (err) {
+            //this.navCtrl.push(MainPage);
+            _this.navCtrl.push(ComplaintUsersNewPage_1);
+            console.error(err);
+        });
+    };
+    ComplaintUsersNewPage = ComplaintUsersNewPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cards',template:/*ion-inline-start:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\cards\cards.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ \'CARDS_TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <ion-card *ngFor="let item of cardItems">\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img [src]="item.user.avatar">\n      </ion-avatar>\n      <h2>{{item.user.name}}</h2>\n      <p>{{item.date}}</p>\n    </ion-item>\n\n    <img [src]="item.image">\n\n    <ion-card-content>\n      <p>{{item.content}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n            <ion-icon name=\'thumbs-up\'></ion-icon>\n            12 Likes\n          </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n            <ion-icon name=\'text\'></ion-icon>\n            4 Comments\n          </button>\n      </ion-col>\n      <ion-col center text-center>\n        <ion-note>\n          11h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n</ion-content>'/*ion-inline-end:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\cards\cards.html"*/
+            selector: 'page-complaint_usersnew',template:/*ion-inline-start:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\complaint_usersnew\complaint_usersnew.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Nueva Queja    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <!--p>Detalles_____Prueba de lectura de campo: {{this.usuarioActual.id}} / {{this.usuarioActual.email}} / {{this.usuarioActual.token}}</p-->\n  <!--p>Detalles_____Prueba de lectura de campo: {{this.quejas.id}} / {{this.quejas.complaint_id}} / {{this.quejas.user_id}} / {{this.quejas.direccion}} / {{this.quejas.comentarios}}</p-->\n  <!--p>NuevaQueja_____Prueba de lectura de campo: {{this.queja.id}} / {{this.queja.complaint_id}} / {{this.queja.user_id}} / {{this.queja.direccion}} / {{this.queja.comentarios}}</p-->\n\n  <form (submit)="dopostQueja()">\n    <ion-list>\n      <!--\n      <ion-item>\n        <ion-label fixed>{{ \'COMPLAINTID\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="this.queja.complaint_id" name="complaint_id" ></ion-input>\n      </ion-item>\n      -->\n      <ion-item>\n          <ion-label fixed>{{ \'COMPLAINTID\' | translate }}</ion-label>\n          <ion-select [(ngModel)]="this.queja.complaint_id" name="complaint_id">\n              <ion-option value=1>Basuras</ion-option>\n              <ion-option value=2>Estado de las vías</ion-option>\n              <ion-option value=3>Transporte público</ion-option>\n              <ion-option value=4>Vendedores ambulantes</ion-option>\n              <ion-option value=5>Seguridad</ion-option>\n          </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'COMENTARIOS\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="this.queja.comentarios" name="comentarios" ></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'DIRECCIÓN\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="this.queja.direccion" name="direccion" ></ion-input>\n      </ion-item>\n      <div padding>\n        <button ion-button color="primary" block>{{ \'GUARDAR\' | translate }}</button>\n      </div>\n    </ion-list>\n  </form>\n\n</ion-content>\n'/*ion-inline-end:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\complaint_usersnew\complaint_usersnew.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
-    ], CardsPage);
-    return CardsPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["d" /* ComplaintUsers */]])
+    ], ComplaintUsersNewPage);
+    return ComplaintUsersNewPage;
+    var ComplaintUsersNewPage_1;
 }());
 
-//# sourceMappingURL=cards.js.map
+//# sourceMappingURL=complaint_usersnew.js.map
 
 /***/ })
 

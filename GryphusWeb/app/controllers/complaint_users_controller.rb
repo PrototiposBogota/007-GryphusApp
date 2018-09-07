@@ -4,7 +4,8 @@ class ComplaintUsersController < ApplicationController
   # GET /complaint_users
   # GET /complaint_users.json
   def index
-    @complaint_users = ComplaintUser.all
+    #@complaint_users = ComplaintUser.all
+    @complaint_users = ComplaintUser.where(["user_id = ?", current_user.id]).order("created_at DESC")
   end
 
   # GET /complaint_users/1

@@ -12,11 +12,24 @@ export class CourseUsersDispPage {
   cursos: any[] = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public CourseUsers: CourseUsers) {
-    this.usuarioActual = navParams.get("user");
+    this.usuarioActual = navParams.get("user")
   }
 
   ionViewDidLoad() {
     this.CourseUsers.getDisp({userid: this.usuarioActual.id})
+    .subscribe(
+      (data) => {
+        this.cursos = data['cursos'];
+        //console.log(this.usuarioActual.id);
+      }, (err) => {
+      //this.navCtrl.push(MainPage);
+      this.navCtrl.push(CourseUsersDispPage);
+        console.error(err);
+    });
+  }
+
+  dopostInsCurso(courseid) {
+    this.CourseUsers.postInsCurso({courseid: courseid, userid: this.usuarioActual.id})
     .subscribe(
       (data) => {
         this.cursos = data['cursos'];

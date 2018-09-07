@@ -13,6 +13,8 @@ import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { CourseUsers } from '../providers';
 import { ChallengeUsers } from '../providers';
+import { ComplaintUsers } from '../providers';
+import { ComplaintFiles } from '../providers';
 import { MyApp } from './app.component';
 
 // The translate loader needs to know where to load i18n files
@@ -68,7 +70,9 @@ export function provideSettings(storage: Storage) {
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     CourseUsers,
-    ChallengeUsers
+    ChallengeUsers,
+    ComplaintUsers,
+    ComplaintFiles
   ]
 })
 export class AppModule { }

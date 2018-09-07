@@ -27,4 +27,17 @@ export class ChallengeUsersDispPage {
         console.error(err);
     });
   }
+
+  dopostInsReto(challengeid) {
+    this.ChallengeUsers.postInsReto({challengeid: challengeid, userid: this.usuarioActual.id})
+    .subscribe(
+      (data) => {
+        this.retos = data['retos'];
+        //console.log(this.usuarioActual.id);
+      }, (err) => {
+      //this.navCtrl.push(MainPage);
+      this.navCtrl.push(ChallengeUsersDispPage);
+        console.error(err);
+    });
+  }
 }

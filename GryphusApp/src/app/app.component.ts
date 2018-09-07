@@ -51,7 +51,16 @@ export class MyApp {
     { title: 'ChallengeUsers', component: 'ChallengeUsersPage' },
     { title: 'ChallengeUsersAct', component: 'ChallengeUsersActPage' },
     { title: 'ChallengeUsersDisp', component: 'ChallengeUsersDispPage' },
-    { title: 'ChallengeUsersHist', component: 'ChallengeUsersHistPage' }
+    { title: 'ChallengeUsersHist', component: 'ChallengeUsersHistPage' },
+    { title: 'ComplaintUsers', component: 'ComplaintUsersPage' },
+    { title: 'ComplaintUsersAct', component: 'ComplaintUsersActPage' },
+    { title: 'ComplaintUsersDisp', component: 'ComplaintUsersDispPage' },
+    { title: 'ComplaintUsersHist', component: 'ComplaintUsersHistPage' },
+    { title: 'ComplaintUsersNew', component: 'ComplaintUsersNewPage' },
+    { title: 'ComplaintFiles', component: 'ComplaintFilesPage' },
+    { title: 'ComplaintFilesEdit', component: 'ComplaintFilesEditPage' },
+    { title: 'ComplaintFilesNew', component: 'ComplaintFilesNewPage' },
+    { title: 'ComplaintFilesDel', component: 'ComplaintFilesDelPage' }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

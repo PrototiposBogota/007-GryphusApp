@@ -84,6 +84,16 @@ module Api
         end
       end
 
+      def inscribircurso
+        inscribir
+        render json: {courseuser: @inscripcion}, status: :ok
+      end
+
+      def finalizarcurso
+        finalizar
+        render json: {courseuser: @inscripcion}, status: :ok
+      end
+
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_course_user

@@ -11,7 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PrincipalPage {
   usuarioActual: any;
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.usuarioActual = navParams.get("user");
   }
@@ -25,6 +25,6 @@ export class PrincipalPage {
   }
 
   irAQuejas() {
-    //this.navCtrl.push("xxx");
+    this.navCtrl.push("ComplaintUsersPage", {user: this.usuarioActual});
   }
 }

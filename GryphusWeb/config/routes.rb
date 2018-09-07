@@ -46,11 +46,18 @@ Rails.application.routes.draw do
       get 'course_users/show_disp'
       get 'course_users/show_act'
       get 'course_users/show_hist'
+      post 'course_users/inscribircurso'
+      post 'course_users/finalizarcurso'
       post 'users/signup'
       post 'users/signin'
       get 'challenge_users/show_disp'
       get 'challenge_users/show_act'
       get 'challenge_users/show_hist'
+      post 'challenge_users/inscribirreto'
+      post 'challenge_users/finalizarreto'
+      resources :complaint_users
+      get 'complaint_users/show_hist'
+      resources :complaintfiles
     end
   end
 end

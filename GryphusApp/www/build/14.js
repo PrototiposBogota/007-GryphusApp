@@ -1,6 +1,6 @@
 webpackJsonp([14],{
 
-/***/ 338:
+/***/ 350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__course_usersact__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__course_usersact__ = __webpack_require__(382);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,14 +44,14 @@ var CourseUsersActPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 360:
+/***/ 382:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseUsersActPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -85,14 +85,27 @@ var CourseUsersActPage = /** @class */ (function () {
             console.error(err);
         });
     };
+    CourseUsersActPage.prototype.dopostFinCurso = function (id) {
+        var _this = this;
+        //this.CourseUsers.postFinCurso({courseid: courseid, userid: this.usuarioActual.id})
+        this.CourseUsers.postFinCurso({ id: id })
+            .subscribe(function (data) {
+            _this.cursos = data['cursos'];
+            //console.log(this.usuarioActual.id);
+        }, function (err) {
+            //this.navCtrl.push(MainPage);
+            _this.navCtrl.push(CourseUsersActPage_1);
+            console.error(err);
+        });
+    };
     CourseUsersActPage = CourseUsersActPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-course_usersact',template:/*ion-inline-start:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\course_usersact\course_usersact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Cursos Actuales    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>Actuales_____Prueba de lectura de campo: {{this.usuarioActual.id}} / {{this.usuarioActual.email}} / {{this.usuarioActual.token}}</p>\n\n  <ion-list>\n    <ion-item *ngFor="let curso of cursos">\n      <p>IdRegistro: {{curso.id}}, IDCurso: {{curso.course.nombre}}, NombreCurso: {{curso.course.nombre}}, FechaInicio: {{curso.fechainicio}}, FechaFin: {{curso.fechafin}}</p>\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"D:\DocFam\Descargas\Fedsoft\pruebas\GryphusApp\src\pages\course_usersact\course_usersact.html"*/
+            selector: 'page-course_usersact',template:/*ion-inline-start:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\course_usersact\course_usersact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Cursos Actuales    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>Actuales_____Prueba de lectura de campo: {{this.usuarioActual.id}} / {{this.usuarioActual.email}} / {{this.usuarioActual.token}}</p>\n\n  <ion-list>\n    <ion-item *ngFor="let curso of cursos">\n      <p>IdRegistro: {{curso.id}}, IDCurso: {{curso.course_id}}, NombreCurso: {{curso.course.nombre}}, FechaInicio: {{curso.fechainicio}}, FechaFin: {{curso.fechafin}}</p>\n      <button ion-button (click)="dopostFinCurso(curso.id)" class="button">FinalizarCurso</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\DocFam\Proyectos\Consulens\Proyectos\Fedesoft\FullStack\007-GryphusApp\GryphusApp\src\pages\course_usersact\course_usersact.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* CourseUsers */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* CourseUsers */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["e" /* CourseUsers */]])
     ], CourseUsersActPage);
     return CourseUsersActPage;
-    var CourseUsersActPage_1, _a, _b, _c;
+    var CourseUsersActPage_1;
 }());
 
 //# sourceMappingURL=course_usersact.js.map

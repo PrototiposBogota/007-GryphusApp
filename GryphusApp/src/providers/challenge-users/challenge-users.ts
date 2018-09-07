@@ -71,6 +71,34 @@ export class ChallengeUsers {
     return seq;
   }
 
+  postInsReto(params?: any) {
+    let seq = this.api.post('challenge_users/inscribirreto', params).share();
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._guardaParam(res);
+      } else {
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+    return seq;
+  }
+
+  postFinReto(params?: any) {
+    let seq = this.api.post('challenge_users/finalizarreto', params).share();
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._guardaParam(res);
+      } else {
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+    return seq;
+  }
+
   /**
    * Process a login/signup response to store user data
    */

@@ -84,6 +84,16 @@ module Api
         end
       end
 
+      def inscribirreto
+        inscribir
+        render json: {challengeUser: @inscripcion}, status: :ok
+      end
+
+      def finalizarreto
+        finalizar
+        render json: {challengeUser: @inscripcion}, status: :ok
+      end
+
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_challenge_user
